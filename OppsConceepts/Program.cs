@@ -42,6 +42,9 @@ namespace OppsConceepts
             encapsulation.SetSalary(8000);
             Console.WriteLine("Salary of" + encapsulation.name + " is " + encapsulation.GetSalary());
 
+            DetailsInfo detailsInfo = new DetailsInfo();
+            detailsInfo.NonAbstractMethode();
+            detailsInfo.Salary();
             Console.ReadLine();
         }
     }
