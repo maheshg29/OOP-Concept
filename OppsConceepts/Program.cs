@@ -11,6 +11,9 @@ namespace OppsConceepts
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To OOP Concept");
+            ObjectAndClass objectAndClass=new ObjectAndClass();
+            objectAndClass.SampleMethode();
+            Console.ReadLine();
         }
     }
 }
