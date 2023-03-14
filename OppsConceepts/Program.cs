@@ -35,6 +35,13 @@ namespace OppsConceepts
 
             Polymorphism square = new Square();
             Console.WriteLine("Area :" + square.Area());
+
+            Encapsulation encapsulation = new Encapsulation();
+            Console.WriteLine("Enter Employee Name");
+            encapsulation.name = Console.ReadLine();
+            encapsulation.SetSalary(8000);
+            Console.WriteLine("Salary of" + encapsulation.name + " is " + encapsulation.GetSalary());
+
             Console.ReadLine();
         }
     }
