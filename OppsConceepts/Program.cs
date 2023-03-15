@@ -55,7 +55,11 @@ namespace OppsConceepts
             marksobj2.engMarks = 75;
 
             Variables.salary = 50000;
-           
+
+            DiriderivedClass diriderivedClass = new DiriderivedClass();
+            diriderivedClass.Salary();
+            StaticClass.DoSomething();
+
             Console.ReadLine();
         }
     }
