@@ -11,11 +11,11 @@ namespace OppsConceepts
        
     }
 
-    public abstract class A
+    public abstract class BaseClass
     {
         public abstract void Salary(); // abstract Methode
     }
-    public class B : A
+    public class DiriderivedClass : BaseClass
     {
         int salary = 10000;
         public override void Salary()
