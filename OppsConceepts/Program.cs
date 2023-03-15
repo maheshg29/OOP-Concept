@@ -78,16 +78,17 @@ namespace OppsConceepts
                     TypeOfMethods.StaticMethod();
                     break;
 
+                case 8:
+                    ValueAndReferenceType valueAndReferenceType = new ValueAndReferenceType();
+                    valueAndReferenceType.ShowValueAndReferanceType();
+                    break;
 
                 default:
-                    Console.WriteLine("Please Enter Right Option in between 1 to 7");
+                    Console.WriteLine("Please Enter Right Option in between 1 to 8");
                     break;
 
             }
-           
-
-            ;
-
+          
             Console.ReadLine();
         }
     }
