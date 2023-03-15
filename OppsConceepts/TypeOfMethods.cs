@@ -8,7 +8,10 @@ namespace OppsConceepts
 {
     public class TypeOfMethods
     {
-       
+        public static void StaticMethod()
+        {
+            Console.WriteLine("This is Static Method");
+        }
     }
 
     public abstract class BaseClass
