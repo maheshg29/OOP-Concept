@@ -19,9 +19,14 @@ namespace OppsConceepts
             decimal speed=90;
             double salary=15000;
             float teamperature=19;
-            Console.WriteLine(age);
+
+            Console.WriteLine("Age before Change age function" + age);
+            changeage(age);//----------> Example of Value Type
+            Console.WriteLine("Age after Change age function"+age);
+
             Console.WriteLine("Male and Female"+ sex +" Minor " +minor);
             Console.WriteLine("Speed is "+ speed + "Salary is "+ salary+ "Teamperature of car is " +teamperature);
+
             // this are all Value Type data types
             //------------------//
             //a reference type doesn't store its value directly. Instead,
@@ -34,8 +39,29 @@ namespace OppsConceepts
             double[] balance = { 2340.0, 4523.69, 3421.0 };
             Console.WriteLine(studentName);
             Console.WriteLine("Mark of first subject is " + marks[0]);
+
+            EmployeeDetails employeeDetails = new EmployeeDetails();
+            employeeDetails.name = "Mahesh";
+           
+            ChangeReferenceType(employeeDetails);
+
+            Console.WriteLine(employeeDetails.name);
+
             //Class
             //Delegate
         }
+
+        static void changeage(int age)
+        {
+            age = 66;
+
+            Console.WriteLine(age);
+        }
+
+        static void ChangeReferenceType(EmployeeDetails emp2)
+        {
+             emp2.name= "Ram";
+        }
+
     }
 }
