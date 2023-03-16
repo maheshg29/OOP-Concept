@@ -11,7 +11,7 @@ namespace OppsConceepts
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To OOP Concept");
-            Console.WriteLine("Select option For Respective Concepts \n 1.ObjectAndClass \n 2.Polymorphism \n 3.Inheritance \n 4.Encapsulation \n 5.Abstaction \n 6.Variable \n 7. Type of Method");
+            Console.WriteLine("Select option For Respective Concepts \n 1.ObjectAndClass \n 2.Polymorphism \n 3.Inheritance \n 4.Encapsulation \n 5.Abstaction \n 6.Variable \n 7. Type of Method \n 8. Value and Referance Type \n 9.Type of Inheritance");
             int result = Convert.ToInt32(Console.ReadLine());
             switch (result)
             {
@@ -82,9 +82,19 @@ namespace OppsConceepts
                     ValueAndReferenceType valueAndReferenceType = new ValueAndReferenceType();
                     valueAndReferenceType.ShowValueAndReferanceType();
                     break;
+                case 9:
+                    DerivedClass derivedClass = new DerivedClass();
+                    derivedClass.TestMethodInDeriveClass();//Example of Single Inheritance 
+
+                    C classC=new C();
+                    classC.MessageInClassC();// Example of Hierarchical inheritance 
+
+                    Manager manager=new Manager();//Example of Multilevel inheritance
+                    manager.ManagerDetails();
+                    break;
 
                 default:
-                    Console.WriteLine("Please Enter Right Option in between 1 to 8");
+                    Console.WriteLine("Please Enter Right Option in between 1 to 9");
                     break;
 
             }
